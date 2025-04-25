@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="uk">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Спортивні Новини</title>
+		<link rel="stylesheet" href="styles.css" />
+		<script defer src="script.jsx"></script>
+	</head>
+	<body>
+		<div class="container">
+			<header>
+				<h1>Спортивні Новини</h1>
+				<nav>
+					<ul>
+						<li>
+							<a href="#" class="filter-category active" data-category="all"
+								>Усі</a
+							>
+						</li>
+						<li>
+							<a href="#" class="filter-category" data-category="Технології"
+								>Технології</a
+							>
+						</li>
+						<li>
+							<a href="#" class="filter-category" data-category="Спорт"
+								>Спорт</a
+							>
+						</li>
+						<li>
+							<a href="#" class="filter-category" data-category="Культура"
+								>Культура</a
+							>
+						</li>
+					</ul>
+				</nav>
+			</header>
+
+			<section class="filters">
+				<label for="sort-date">Сортувати за датою:</label>
+				<select id="sort-date">
+					<option value="newest">Спочатку нові</option>
+					<option value="oldest">Спочатку старі</option>
+				</select>
+
+				<label for="sort-popularity">Популярність:</label>
+				<select id="sort-popularity">
+					<option value="most">Найпопулярніші</option>
+					<option value="least">Найменш популярні</option>
+				</select>
+			</section>
+
+			<main id="news-container">
+				<article
+					class="news-card"
+					data-category="Спорт"
+					data-date="2025-04-20"
+					data-popularity="2500">
+					<img
+						src="https://images.pexels.com/photos/47730/the-ball-stadion-football-the-pitch-47730.jpeg?auto=compress&cs=tinysrgb&w=800"
+						alt="Футбол" />
+					<h2>Україна перемогла на Євро!</h2>
+					<p class="meta">Спорт | 2025-04-20 | Перегляди: 2500</p>
+					<p>
+						Збірна України здобула важливу перемогу в матчі проти збірної
+						Німеччини, що стало сенсацією турніру.
+					</p>
+				</article>
+
+				<article
+					class="news-card"
+					data-category="Технології"
+					data-date="2025-04-18"
+					data-popularity="3100">
+					<img
+						src="https://recommerce.gumlet.io/almajuice.reshop.kz/modules/102091045666e02d7268ac4?enlarge=true&mode=fit&width=845&height=500&format=auto"
+						alt="iPhone" />
+					<h2>Новий iPhone вразив користувачів</h2>
+					<p class="meta">Технології | 2025-04-18 | Перегляди: 3100</p>
+					<p>
+						Apple представила новий флагман, який має оновлений дизайн і потужну
+						камеру з ІІ-можливостями.
+					</p>
+				</article>
+
+				<article
+					class="news-card"
+					data-category="Культура"
+					data-date="2025-04-15"
+					data-popularity="1500">
+					<img
+						src="https://images.pexels.com/photos/12060366/pexels-photo-12060366.jpeg?auto=compress&cs=tinysrgb&w=800"
+						alt="Мистецтво" />
+					<h2>Фестиваль вуличного мистецтва у Львові</h2>
+					<p class="meta">Культура | 2025-04-15 | Перегляди: 1500</p>
+					<p>
+						Місто Лева стало центром сучасного мистецтва завдяки масштабному
+						фестивалю з участю митців з усього світу.
+					</p>
+				</article>
+			</main>
+
+			<footer>
+				<p>&copy; 2025 Сайт спортивних новин</p>
+			</footer>
+		</div>
+	</body>
+</html>
